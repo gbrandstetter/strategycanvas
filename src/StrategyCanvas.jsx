@@ -74,7 +74,7 @@ export default function StrategyCanvas() {
     if (!chartElement) return;
 
     try {
-      const html2canvas = (await import('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm')).default;
+      const html2canvas = (await import('html2canvas')).default;
       const canvas = await html2canvas(chartElement, {
         scale: 2,
         backgroundColor: '#ffffff'
